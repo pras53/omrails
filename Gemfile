@@ -21,4 +21,4 @@ end
 
 gem 'jquery-rails'
 
-gem 'bootstrap-sass', '~>2.2.2.0'
+gem 'bootstrap-sass', '~>2.3.1.0'
