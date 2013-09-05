@@ -11,6 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(:version => 20130903065244) do
 
   create_table "pins", :force => true do |t|
@@ -22,9 +23,15 @@ ActiveRecord::Schema.define(:version => 20130903065244) do
     t.string   "image_content_type"
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
-  end
+=======
+ActiveRecord::Schema.define(:version => 20130902103626) do
 
-  add_index "pins", ["user_id"], :name => "index_pins_on_user_id"
+  create_table "pins", :force => true do |t|
+    t.string   "description"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+>>>>>>> parent of d11bce1... Add Pins Associations
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
